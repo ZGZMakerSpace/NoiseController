@@ -7,7 +7,7 @@ CRGB ledsG[NUM_LEDS];
 
 // Control 
 void control_spotlight( int semaphore, bool on_off ){
-  if( on_off ){
+  /*if( on_off ){
     switch( semaphore ){
       case 1:
         //Encender Luz VERDE
@@ -57,12 +57,12 @@ void control_spotlight( int semaphore, bool on_off ){
         break;
     }
   }
-  
+  */
 }
 
 
 void light_micro( float value ){
-
+/*
   if ( value > green_threshold ){
     control_spotlight(1, true );
   }
@@ -85,5 +85,5 @@ void light_micro( float value ){
 
   if ( value < green_threshold ){
     control_spotlight(1, false );
-  }
+  }*/
 }

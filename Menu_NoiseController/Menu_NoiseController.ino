@@ -9,6 +9,7 @@ int BRIGHTNESS = 10;
 
 #include "micro.h"
 #include "lights.h"
+
 #include "menu_def.h"
 
 

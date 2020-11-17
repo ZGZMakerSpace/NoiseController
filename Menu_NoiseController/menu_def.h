@@ -25,14 +25,14 @@ serialIn serial(Serial);
 menuIn* inputsList[]={&encStream,&encButton,&serial};
 chainStream<3> in(inputsList);//3 is the number of inputs
 
-  // Events Declaration /////////////////////////////////////////
+// Events Declaration /////////////////////////////////////////
 result showEvent(eventMask e,navNode& nav,prompt& item) {
   Serial.print("event: ");
   Serial.println(e);
   return proceed;
 }
 
-  // Cambiar Brillo /////////////////////////////////////////
+// Cambiar Brillo /////////////////////////////////////////
 result changebrightness(eventMask e,navNode& nav, prompt &item) {
   
   FastLED.setBrightness(BRIGHTNESS);
@@ -41,7 +41,7 @@ result changebrightness(eventMask e,navNode& nav, prompt &item) {
   return proceed;
 }
 
-  // Control Menu Lights /////////////////////////////////////
+// Control Menu Lights /////////////////////////////////////
   
 int redCtrl=LOW;
 int yellowCtrl=LOW;
